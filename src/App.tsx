@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+    <main className="bg-black text-white min-h-screen font-sans">
+      <section className="w-full flex flex-col items-center justify-center py-20">
+        <img
+          src="/founder.jpeg"
+          alt="Founder - Imran Ahmad"
+          className="w-64 h-64 object-cover rounded-2xl border border-gray-600 shadow-xl mb-6"
+        />
+        <h1 className="text-4xl font-bold">MindVibe Works</h1>
+        <p className="text-blue-400 mt-1">Founder & Creative Director</p>
+        <p className="text-gray-300 mt-4 text-center max-w-xl">
+          AI tools that make creators profitable — Urdu & English support.
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+
+        <div className="mt-6 flex gap-4">
+          <a
+            href="https://wa.me/923081725317"
+            className="bg-green-500 px-5 py-3 rounded-lg text-black font-bold hover:bg-green-600"
+          >
+            WhatsApp Us Now!
+          </a>
+
+          <a
+            href="#"
+            className="bg-blue-600 px-5 py-3 rounded-lg text-white font-semibold hover:bg-blue-700"
+          >
+            Launch App (Soon)
+          </a>
+        </div>
+      </section>
+    </main>
+  );
 }
 
-export default App
+export default App;
