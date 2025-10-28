@@ -1,0 +1,1 @@
+import React from "react"; export default function ServiceCard({title,text}){return <div className="card"><h3>{title}</h3><p className="muted">{text}</p></div>};

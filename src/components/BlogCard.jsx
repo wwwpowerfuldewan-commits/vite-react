@@ -1,0 +1,1 @@
+import React from "react"; import {Link} from "react-router-dom"; export default function BlogCard({slug,title,excerpt}){return <Link to={`/blog/${slug}`} className="card"><h3>{title}</h3><p className="muted">{excerpt}</p></Link>};
