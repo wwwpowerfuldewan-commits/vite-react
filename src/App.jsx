@@ -1,28 +1,28 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar.jsx";
-import Home from "./pages/Home.jsx";
-import About from "./pages/About.jsx";
-import Services from "./pages/Services.jsx";
-import Blog from "./pages/Blog.jsx";
-import Community from "./pages/Community.jsx";
-import Contact from "./pages/Contact.jsx";
-import AppPage from "./pages/App.jsx";
-import Assistant from "./pages/Assistant.jsx";
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
+import Home from "./pages/index.jsx";
+import FeaturesPage from "./pages/features.jsx";
+import CreativePage from "./pages/creative.jsx";
+import PricingPage from "./pages/pricing.jsx";
+import BlogPage from "./pages/blog.jsx";
+import CommunityPage from "./pages/community.jsx";
+import HelpPage from "./pages/help.jsx";
 
 export default function App(){
   return (<>
-    <Navbar/>
+    <Header/>
     <Routes>
       <Route path="/" element={<Home/>}/>
-      <Route path="/about" element={<About/>}/>
-      <Route path="/services" element={<Services/>}/>
-      <Route path="/blog" element={<Blog/>}/>
-      <Route path="/community" element={<Community/>}/>
-      <Route path="/contact" element={<Contact/>}/>
-      <Route path="/app" element={<AppPage/>}/>
-      <Route path="/assistant" element={<Assistant/>}/>
+      <Route path="/features" element={<FeaturesPage/>}/>
+      <Route path="/creative" element={<CreativePage/>}/>
+      <Route path="/pricing" element={<PricingPage/>}/>
+      <Route path="/blog" element={<BlogPage/>}/>
+      <Route path="/community" element={<CommunityPage/>}/>
+      <Route path="/help" element={<HelpPage/>}/>
       <Route path="*" element={<div className="container"><h1>Not Found</h1></div>}/>
     </Routes>
+    <Footer/>
   </>);
 }
